@@ -1,0 +1,57 @@
+{
+    "compilerOptions": {
+        "composite": true,
+        "target": "ES2022",
+        "useDefineForClassFields": true,
+        "lib": [
+            "ES2022",
+            "DOM",
+            "DOM.Iterable"
+        ],
+        "module": "ESNext",
+        "skipLibCheck": true,
+        "moduleResolution": "bundler",
+        "isolatedModules": true,
+        "jsx": "react-jsx",
+        /* Type checks */
+        "strict": false,
+        "noUnusedLocals": false,
+        "noUnusedParameters": false,
+        "noImplicitAny": false,
+        "noFallthroughCasesInSwitch": false,
+        /* Path Aliases */
+        "baseUrl": "src",
+        "paths": {
+            "@/*": [
+                "*"
+            ],
+            "@components/*": [
+                "components/*"
+            ],
+            "@contexts/*": [
+                "contexts/*"
+            ],
+            "@hooks/*": [
+                "hooks/*"
+            ],
+            "@lib/*": [
+                "lib/*"
+            ],
+            "@Integrations/*": [
+                "Integrations/*"
+            ]
+        }
+    },
+    "include": [
+        "src",
+        "src/vite-env.d.ts"
+    ],
+    "files": [
+        "src/vite-env.d.ts"
+    ],
+    "exclude": [
+        "**/*.js",
+        "**/*.d.ts",
+        "node_modules"
+    ]
+}
